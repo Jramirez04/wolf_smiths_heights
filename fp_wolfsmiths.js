@@ -5,7 +5,7 @@
     Final Project - Wolfsmiths Website
     Group B
 
-    Wolfsmiths Café Restaurant & Bar
+    Wolfsmiths Lounge
     Authors: Christina Seifert,
              Julianna Ramirez,
              LaTrivia Edwards,
