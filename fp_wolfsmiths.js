@@ -15,4 +15,6 @@
     Date finished: 2025-__-__ 
 
     Filename: fp_wolfsmiths.js
+
+    JavaScript: CHRISTINA SEIFERT
 */
