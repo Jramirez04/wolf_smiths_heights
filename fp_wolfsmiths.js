@@ -2,7 +2,7 @@
 
 /*
     Web Fundamentals (ITEC 2351.01) - FA25
-    Final Project - Wolfsmiths Website
+    Final Project - Wolfsmiths Lounge Website
     Group B
 
     Wolfsmiths Lounge
