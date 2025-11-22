@@ -30,7 +30,7 @@
   box-sizing: border-box;
 }
 
-.ws_image {
+.ws_img {
   /* Full height */
   height: 50%;
 
@@ -41,7 +41,7 @@
 }
 
 /* Images used */
-.img1 { background-image: url("test_image.jpg"); }
+.img1 { background-image: url("img1.jpg"); }
 .img2 { background-image: url("img2.jpg"); }
 .img3 { background-image: url("img3.jpg"); }
 .img4 { background-image: url("img4.jpg"); }
@@ -57,7 +57,7 @@
   font-weight: bold;
   font-size: 80px;
   border: 10px solid #f1f1f1;
-  position: fixed; /* Stay fixed */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
