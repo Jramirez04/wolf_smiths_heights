@@ -68,13 +68,28 @@
   text-align: center;
 }
 /*nav bar*/
-.topnav a {
+.topnav {
+  overflow: hidden;
   background-color: #000000;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Links inside the navbar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /* Dropdown Buttons */
@@ -96,7 +111,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #363636;
+  background-color: #000000;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -122,6 +137,6 @@
   background-color: #363636;
 }
 
-#home:hover .dropbtn {
+.topnav a:hover {
   background-color: #363636;
 }
