@@ -186,6 +186,7 @@
 /* Menu category line (like Glass/Bottle pricing) */
 .category-line {
     font-size: 1.5em;
+    letter-spacing: 1px;
     margin-bottom: 15px;
     text-align: center; /* center-align for readability */
     color: #d1d1d1; /* lighter gray for subtle contrast */
@@ -195,6 +196,7 @@
 .menu-item {
     font-size: 1.1em;
     font-style: italic;
+    letter-spacing: 1px;
     margin-bottom: 15px;
     line-height: 1.6;
     text-align: center; /* center-align for readability */
