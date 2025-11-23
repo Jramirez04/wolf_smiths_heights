@@ -71,6 +71,7 @@
 .topnav {
   overflow: visible;
   background-color: #000000;
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -94,6 +95,7 @@
 /* Dropdown Buttons */
 .dropbtn {
   background-color: #000000;
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -113,6 +115,7 @@
   float: left;
   position: absolute;
   background-color: #000000;
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 9999;
@@ -129,7 +132,10 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #363636;}
+.dropdown-content a:hover {
+  background-color: #363636;
+  opacity: 0.5;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -139,10 +145,12 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #363636;
+  opacity: 0.5;
 }
 
 .topnav a:hover {
   background-color: #363636;
+  opacity: 0.5;
 }
 
 /* Menu page global styling */
