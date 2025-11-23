@@ -32,7 +32,8 @@
 
 .ws_img {
   /* Full height */
-  height: 50%;
+  height: 100vh;
+  width: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -41,13 +42,13 @@
 }
 
 /* Images used */
-.img1 { background-image: url("img1.jpg"); }
-.img2 { background-image: url("img2.jpg"); }
-.img3 { background-image: url("img3.jpg"); }
-.img4 { background-image: url("img4.jpg"); }
-.img5 { background-image: url("img5.jpg"); }
-.img6 { background-image: url("img6.jpg"); }
-.img7 { background-image: url("img7.jpg"); }
+.img1 { background-image: url("images/img1.jpg"); }
+.img2 { background-image: url("images/img2.jpg"); }
+.img3 { background-image: url("images/img3.jpg"); }
+.img4 { background-image: url("images/img4.jpg"); }
+.img5 { background-image: url("images/img5.jpg"); }
+.img6 { background-image: url("images/img6.jpg"); }
+.img7 { background-image: url("images/img7.jpg"); }
 
 /* Position text in the middle of the page/image */
 .bg-text {
