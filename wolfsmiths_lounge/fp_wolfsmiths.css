@@ -69,13 +69,12 @@
 }
 /*nav bar*/
 .topnav {
-  overflow: hidden;
+  overflow: visible;
   background-color: #000000;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
-  cursor: pointer;
   position: fixed;
   top: 0;
   width: 100%;
