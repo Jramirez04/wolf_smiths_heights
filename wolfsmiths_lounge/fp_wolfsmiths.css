@@ -75,6 +75,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 85px;
 }
 
 .topnav-container {
@@ -161,7 +162,10 @@ header {
     padding: 0;
     text-align: center;
 }
-
+/*main body content, under header*/
+.main-content {
+  padding-top: 85px;
+}
 /* Container for menu sections */
 .menu-section {
     background-image: url(images/AdobeStock_436354662.jpeg);
