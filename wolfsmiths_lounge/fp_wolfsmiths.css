@@ -67,90 +67,89 @@
   padding: 20px;
   text-align: center;
 }
-/*nav bar*/
-.topnav {
-  overflow: visible;
-  background-color: #000000;
-  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+/* HEADER STYLES */
+header {
+    background-color: #000; /* Black header for a strong modern look */
+    opacity: 0.85;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-/* Links inside the navbar */
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
+.topnav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Dropdown Buttons */
-.dropbtn {
-  background-color: #000000;
-  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-/*positioning of dropdown content*/
-.dropdown {
-  position: relative;
-  display: inline-block;
+/* Logo Styling */
+.logo {
+    height: 80px;
+    width: auto;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Navigation */
+.topnav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav-menu li {
+    position: relative;
+}
+
+.topnav-menu a {
+    color: #fff; /* All text white */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 10px;
+    transition: 0.3s ease;
+}
+
+.topnav-menu a:hover {
+    color: #8fd3fd; /*  silver-blue hover — keep with B&W color theme */
+}
+
+/* Dropdown container */
 .dropdown-content {
-  display: none;
-  flex-direction: column;
-  float: left;
-  position: absolute;
-  background-color: #000000;
-  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 9999;
+    /* Remove display:none */
+    opacity: 0;                  /* hidden by default */
+    visibility: hidden;          /* hidden from layout */
+    position: absolute;
+    background-color: #000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    border-radius: 5px;
+    top: 35px;
+    z-index: 1000;               /* ensure it’s above other elements */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* smooth fade */
 }
 
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
-  float: left;
-  flex-direction: column;
-  z-index: 9999;
+/* Dropdown links */
+.dropdown-content li a {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #363636;
-  opacity: 0.5;
+.dropdown-content li a:hover {
+    background-color: #363636;
+    color: #8fd3fd;
+    opacity: 0.85;
 }
 
-/* Show the dropdown menu on hover */
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
-} 
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #363636;
-  opacity: 0.5;
-}
-
-.topnav a:hover {
-  background-color: #363636;
-  opacity: 0.5;
+    opacity: 0.85;
+    visibility: visible;
 }
 
 /* Menu page global styling */

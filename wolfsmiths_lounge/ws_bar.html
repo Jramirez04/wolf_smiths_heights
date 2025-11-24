@@ -23,61 +23,59 @@
     <link href="fp_wolfsmiths.css" rel="stylesheet" />
     <title>Wolfsmiths Lounge - Contact Us</title>
 </head>
-<body>
 
-        <header>           
-        <image src="images/ws_logo.png" alt="Wolfsmiths Logo" class="ws_logo"/>
-        <h1>Wolfsmiths Lounge</h1>
+<body>     
+    <header>
+    <div class="topnav-container">
+        <!--logo-->
+        <a href="fp_wolfsmiths.html">
+            <img src="images/WhiteWolfsmithsImg.webp" alt="Wolfsmiths Lounge Logo" class="logo">
+        </a>
 
-     <nav>
-        <div class="topnav" id="wsTopnav">
-            <a href="#home">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Menu 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="ws_menu.html#coffee-tea">Coffee & Tea</a>
-                    <a href="ws_menu.html#breakfast">Breakfast</a>
-                    <a href="ws_menu.html#lunch">Lunch</a>
-                    <a href="ws_menu.html#dinner">Dinner</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Bar
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="ws_bar.html#sig-coffee-cocktails">Signature Coffee Cocktails</a>
-                    <a href="ws_bar.html#cocktails">Cocktails</a>
-                    <a href="ws_bar.html#fine-wine">Fine Wine</a>
-                    <a href="ws_bar.html#draft-beer">Draft Beer</a>
-                    <a href="ws_bar.html#cans-bottles">Cans & Bottles</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Location & Hours
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Hours</a>
-                    <a href="#">Address</a>
-                    <a href="#">Map</a>
-                </div>
-            </div>
-            <a href="#events">Events</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <!--navigation-->
+    <nav>
+        <ul class="topnav-menu">
+            <!--home page (about section)-->
+            <li><a href="fp_wolfsmiths.html">Home</a></li>
+            <!--menu-->
+            <li class="dropdown">
+                <a href="#">Menu</a>
+                <!--sub-menu options-->
+                <ul class="dropdown-content">
+                    <li><a href="ws_menu.html#coffee-tea">Coffee & Tea</a></li>
+                    <li><a href="ws_menu.html#breakfast">Breakfast</a></li>
+                    <li><a href="ws_menu.html#lunch">Lunch</a></li>
+                    <li><a href="ws_menu.html#dinner">Dinner</a></li>
+                </ul>
+            </li>
+            <!--bar-->
+            <li class="dropdown">
+                <a href="#">Bar</a>
+                <!--sub-bar options-->
+                <ul class="dropdown-content">
+                    <li><a href="ws_bar.html#sig-coffee-cocktails">Signature Coffee Cocktails</a></li>
+                    <li><a href="ws_bar.html#cocktails">Cocktails</a></li>
+                    <li><a href="ws_bar.html#fine-wine">Fine Wine</a></li>
+                    <li><a href="ws_bar.html#draft-beer">Draft Beer</a></li>
+                    <li><a href="ws_bar.html#cans-bottles">Cans & Bottles</a></li>
+                </ul>
+            </li>
+            <!--location and hours page-->
+            <li><a href="ws_location_hours.html">Location & Hours</a></li>
+            <!--events page-->
+            <li><a href="ws_events.html">Events</a></li>
+            <!--contact page-->
+            <li><a href="ws_contact.html">Contact Us</a></li>
+        </ul>
     </nav>    
-
+    </div>
     </header>
 
 <!---Bar Section --->
 
 <!--Signature Coffee Cocktails-->
 
-<div class="menu-section">
+<div class="menu-section"id="sig-coffee-cocktails">
     <div class="menu-title">Signature Coffee Cocktails</div>
 
     <div class="menu-item"><strong>Caf&eacute; Espresso Martini — 15</strong><br>
@@ -111,7 +109,7 @@
 
 <!--Cocktails-->
 
-<div class="menu-section">
+<div class="menu-section" id="cocktails">
     <div class="menu-title">Cocktails</div>
 
     <div class="menu-item"><strong>Daisy Chain — 16</strong><br>
@@ -143,7 +141,7 @@
 </div>   
 
 <!--Fine Wine List-->
-<div class="menu-section">
+<div class="menu-section" id="fine-wine">
     <div class="menu-title">Fine Wine List</div>
     <p class="category-line">Glass: 9.75 | Bottle: 39</p>
 
@@ -186,7 +184,7 @@
 
 </div>
  <!--Draft Beer -->   
-<div class="menu-section">
+<div class="menu-section" id="draft-beer">
     <div class="menu-title">Draft Beer</div>
     <div class="menu-item">
     
@@ -209,7 +207,7 @@
 
 
 <!--Cans & Bottles-->
-<div class="menu-section">
+<div class="menu-section" id="cans-bottles">
     <div class="menu-title">Cans & Bottles</div>
     <div class="menu-item">
 
