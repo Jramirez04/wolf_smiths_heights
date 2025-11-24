@@ -164,9 +164,6 @@ padding-bottom: 50px;      /*keep footer identical across all pages*/
         .img1 { background-image: url("images/img1.jpg"); }
         .img2 { background-image: url("images/img2.jpg"); }
         .img3 { background-image: url("images/img3.jpg"); }
-        .img4 { background-image: url("images/img4.jpg"); }
-        .img5 { background-image: url("images/img5.jpg"); }
-        .img6 { background-image: url("images/img6.jpg"); }
         .img7 { background-image: url("images/img7.jpg"); }
 
         /* Position text in the middle of the page/image */
@@ -174,17 +171,30 @@ padding-bottom: 50px;      /*keep footer identical across all pages*/
             background-color: rgb(0,0,0); /* Fallback color */
             background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
             color: white;
-            font-weight: bold;
-            font-size: 80px;
             border: 10px solid #f1f1f1;
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 300px;
+            z-index: 1;
+            width: 900px;
             padding: 20px;
             text-align: center;
+        }
+
+        .bg-text h1 {
+            font-weight: bold;
+            font-size: 4em;
+        }
+
+        .bg-text h2 {
+            font-weight: bold;
+            font-size: 3em;
+        }
+
+        .bg-text p {
+            font-weight: normal;
+            font-size: 1.25em;
         }
 
 
