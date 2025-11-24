@@ -12,7 +12,7 @@
              Oneida Gongora,
              Erick Mendoza
     Date started: 2025-11-03
-    Date finished: 2025-__-__ 
+    Date finished: 2025-11-24 
 
     Filename: fp_wolfsmiths.css
 
@@ -160,6 +160,30 @@
 .main-content {
 padding-top: 85px;     /*keep header/navbar identical across all pages*/
 padding-bottom: 50px;      /*keep footer identical across all pages*/
+}
+
+/*all pages scroll-to-top button styles*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 55px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  opacity:0.85;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; 
+}
+
+#myBtn:hover {
+  background-color: #363636; /* Add a dark-grey background on hover */
+  color: #8fd3fd; /*matching opacity and bg/text color with header styles*/
+  opacity: 0.85;
 }
 
     /*  HOME PAGE STYLES  (TO BE MOVED HERE FROM TOP OF DOC WHEN LATRIVIA IS DONE)*/
