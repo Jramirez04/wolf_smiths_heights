@@ -207,8 +207,9 @@ padding-bottom: 50px;      /*keep footer identical across all pages*/
 
         /*bar page tiled bg image*/
         body.bar-page-bg {
-            background-image: url('images/img8.jpg');
-            background-repeat: repeat;
+            background-image: url('images/img17.png');
+            background-size: cover;
+            background-repeat: cover;
         }
 
         /* container for menu sections */
@@ -286,7 +287,8 @@ padding-bottom: 50px;      /*keep footer identical across all pages*/
     /*  LOCATION & HOURS PAGE STYLES  */
         .location-hours-page {
             font-family: 'Lato', sans-serif;
-            background-color: #222020; /* Dark gray background */
+            background-image: url('images/img6.jpg');
+            background-repeat: repeat;
             color: white;
             margin: 0;
             padding: 0;
