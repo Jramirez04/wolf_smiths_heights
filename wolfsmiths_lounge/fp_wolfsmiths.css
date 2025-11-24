@@ -20,59 +20,10 @@
 
 */
 
-  body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-* {
-  box-sizing: border-box;
-}
-
-.ws_img {
-    /* Full height */
-  height: 100vh;
-  width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Images used */
-.img1 { background-image: url("images/img1.jpg"); }
-.img2 { background-image: url("images/img2.jpg"); }
-.img3 { background-image: url("images/img3.jpg"); }
-.img4 { background-image: url("images/img4.jpg"); }
-.img5 { background-image: url("images/img5.jpg"); }
-.img6 { background-image: url("images/img6.jpg"); }
-.img7 { background-image: url("images/img7.jpg"); }
-
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 300px;
-  padding: 20px;
-  text-align: center;
-}
-
-
-
-/*  HEADER STYLES  */
+/*  HEADER/TOPNAVBAR STYLES  */
     header {
-        background-color: #000; /* Black header for a strong modern look */
+        background-color: #000; /* black header for a strong modern look */
         opacity: 0.85;
         position: fixed;
         top: 0;
@@ -155,6 +106,7 @@
         visibility: visible;
     }
 
+
 /*  BODY STYLES  */
 /*all pages main body content*/
 .main-content {
@@ -188,6 +140,52 @@ padding-bottom: 50px;      /*keep footer identical across all pages*/
 
     /*  HOME PAGE STYLES  (TO BE MOVED HERE FROM TOP OF DOC WHEN LATRIVIA IS DONE)*/
         /*home (about) page tiled bg images*/
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .ws_img {
+        /* Full height */
+            height: 100vh;
+            width: 100%;
+        /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Images used */
+        .img1 { background-image: url("images/img1.jpg"); }
+        .img2 { background-image: url("images/img2.jpg"); }
+        .img3 { background-image: url("images/img3.jpg"); }
+        .img4 { background-image: url("images/img4.jpg"); }
+        .img5 { background-image: url("images/img5.jpg"); }
+        .img6 { background-image: url("images/img6.jpg"); }
+        .img7 { background-image: url("images/img7.jpg"); }
+
+        /* Position text in the middle of the page/image */
+        .bg-text {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 80px;
+            border: 10px solid #f1f1f1;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
 
 
     /*  MENU & BAR PAGE STYLES  */
@@ -269,14 +267,198 @@ padding-bottom: 50px;      /*keep footer identical across all pages*/
             color: #fff;
         }
 
-        /*  LOCATION & HOURS PAGE STYLES  */
-            /*PLACEHOLDER*/
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .menu-section {
+                margin: 20px;
+                padding: 15px;
+            }
+        }
+        
+            .menu-title {
+                font-size: 1.6em;
+            }
 
-        /*  CONTACT PAGE STYLES  */
-            /*PLACEHOLDER*/
+            .menu-item {
+                font-size: 1em;
+            }
 
-        /*  EVENTS PAGE STYLES  */
-            /*PLACEHOLDER*/
+    /*  LOCATION & HOURS PAGE STYLES  */
+        .location-hours-page {
+            font-family: 'Lato', sans-serif;
+            background-color: #222020; /* Dark gray background */
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Section styling */
+        .location-hours-page section#locations {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Location blocks */
+        .location-hours-page .location {
+            background-image: url(images/AdobeStock_436354662.jpeg); /* Wallpaper image */
+            background-size: cover;
+            max-width: 900px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            text-align: left; /* allow better map and text layout */
+        }
+
+        /* Location headings */
+        .location-hours-page .location h3 {
+            color: #fff;
+            margin-top: 0;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+
+        /* Paragraphs in location */
+        .location-hours-page .location p {
+            color: #ddd;
+            font-size: 1.05em;
+            line-height: 1.5;
+        }
+
+        /* Make iframes (maps) responsive */
+        .location-hours-page .location iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Footer styling to match theme */
+        .location-hours-page #footer {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            background-color: #111;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        /* Footer links */
+        .location-hours-page #footer nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .location-hours-page #footer nav ul li {
+            margin: 0 15px;
+        }
+
+        .location-hours-page #footer nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .location-hours-page #footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+    /*  CONTACT PAGE STYLES  */
+        .contact-page {
+            font-family: 'Lato', sans-serif; /* Modern font */
+            background-color: #222; /* Dark gray background */
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header and Footer spacing */
+        .contact-page #header,
+        .contact-page #footer {
+            z-index: 1; /* Ensure above background */
+        }
+
+        /* Form Styling */
+        .contact-page form {
+            background-image: url(images/AdobeStock_436354662.jpeg);
+            padding: 50px 35px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 40px auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        .contact-page form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .contact-page form input,
+        .contact-page form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            background-color: #363636;
+            opacity: 0.85;
+            color: white;
+        }
+
+        .contact-page form input::placeholder,
+        .contact-page form textarea::placeholder {
+            color: #bbb; /* light placeholder */
+        }
+
+        .contact-page form button {
+            background-color: black;
+            opacity: 0.85;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-page form button:hover {
+            background-color: #363636;
+            opacity: 0.85;
+            color: #8fd3fd;
+        }
+
+        /* Heading styling */
+        .contact-page h2 {
+            margin-top: 40px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+
+    /*  EVENTS PAGE STYLES  */
+        /*PLACEHOLDER*/
+
+
+
 
 
 /* Header and footer placeholder styling */
@@ -285,187 +467,11 @@ padding-bottom: 50px;      /*keep footer identical across all pages*/
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .menu-section {
-        margin: 20px;
-        padding: 15px;
-    }
-
-    .menu-title {
-        font-size: 1.6em;
-    }
-
-    .menu-item {
-        font-size: 1em;
-    }
-
-    /* Home / Locations Page */
-.home-page {
-    font-family: 'Lato', sans-serif;
-    background-color: #222020; /* Dark gray background */
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    }
-}
-
-/* Section styling */
-.home-page section#locations {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-/* Location blocks */
-.home-page .location {
-    background-image: url(images/AdobeStock_436354662.jpeg); /* Wallpaper image */
-    background-size: cover;
-    max-width: 900px;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
-    text-align: left; /* allow better map and text layout */
-}
-
-/* Location headings */
-.home-page .location h3 {
-    color: #fff;
-    margin-top: 0;
-    font-size: 1.8em;
-    font-weight: 600;
-}
-
-/* Paragraphs in location */
-.home-page .location p {
-    color: #ddd;
-    font-size: 1.05em;
-    line-height: 1.5;
-}
-
-/* Make iframes (maps) responsive */
-.home-page .location iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-/* Footer styling to match theme */
-.home-page #footer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 10px;
-    background-color: #111;
-    color: white;
-    box-sizing: border-box;
-}
-
-/* Footer links */
-.home-page #footer nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.home-page #footer nav ul li {
-    margin: 0 15px;
-}
-
-.home-page #footer nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.home-page #footer nav ul li a:hover {
-    text-decoration: underline;
-}
 
 
 
 
-/* Contact Page Styling */
-.contact-page {
-    font-family: 'Lato', sans-serif; /* Modern font */
-    background-color: #222; /* Dark gray background */
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
-/* Header and Footer spacing */
-.contact-page #header,
-.contact-page #footer {
-    z-index: 1; /* Ensure above background */
-}
 
-/* Form Styling */
-.contact-page form {
-    background-color: #333; /* Slightly lighter dark gray */
-    padding: 50px 35px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 40px auto;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-}
 
-.contact-page form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.contact-page form input,
-.contact-page form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem;
-    background-color: #444;
-    color: white;
-}
-
-.contact-page form input::placeholder,
-.contact-page form textarea::placeholder {
-    color: #bbb; /* light placeholder */
-}
-
-.contact-page form button {
-    background-color: #b8860b; /* modern accent gold */
-    color: white;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact-page form button:hover {
-    background-color: #d4a017;
-}
-
-/* Heading styling */
-.contact-page h2 {
-    margin-top: 40px;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
 

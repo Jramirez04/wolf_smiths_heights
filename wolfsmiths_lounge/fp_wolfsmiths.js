@@ -12,7 +12,7 @@
              Oneida Gongora,
              Erick Mendoza
     Date started: 2025-11-03
-    Date finished: 2025-__-__ 
+    Date finished: 2025-11-24 
 
     Filename: fp_wolfsmiths.js
 
@@ -39,3 +39,4 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
